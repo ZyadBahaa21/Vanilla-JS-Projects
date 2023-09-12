@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: aliceblue;
+}
+
+.screen {
+  cursor: pointer;
+  width: 60%;
+  background-color: gray !important;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.controls {
+  background: #333;
+  color: aliceblue;
+  width: 60%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.controls .btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.controls .fa-play {
+  color: #28a745;
+}
+.controls .fa-stop {
+  color: #dc3545;
+}
+.controls .fa-pause {
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .screen,
+  .controls {
+    width: 90%;
+  }
+}
